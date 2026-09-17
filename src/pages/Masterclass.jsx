@@ -253,11 +253,26 @@ export default function Masterclass() {
             <p className="mt-4 text-4xl font-extrabold">{fmt(100000)} <span className="text-lg text-white/40 line-through">{fmt(150000)}</span></p>
             <p className="text-xs text-white/50">Save {fmt(50000)} • Limited early bird registration. Join before the price moves. Limited Slots — Remote & Physical. Remote & Physical • December 2026.</p>
             <p className="mt-4 font-semibold text-sm">Choose Your Payment Method</p>
-            <div className="mt-3 grid gap-3">
-              <a href={PAYSTACK} target="_blank" rel="noreferrer" className="overflow-hidden rounded-2xl border border-white/15"><img src="/assets/paystack-banner.png" alt="For Africa — Pay in Naira via Paystack" className="w-full object-cover" /><span className="block px-5 py-3 text-sm font-semibold">For Africa — Pay in Naira — Secure payment via Paystack</span></a>
-              <a href={SELAR} target="_blank" rel="noreferrer" className="overflow-hidden rounded-2xl border border-white/15"><img src="/assets/selar-banner.png" alt="International — Pay in USD via Selar" className="w-full object-cover" /><span className="block px-5 py-3 text-sm font-semibold">International — Pay in USD ($74.28) — Secure payment via Selar</span></a>
-              <a href={WHATSAPP} target="_blank" rel="noreferrer" className="btn-secondary w-full justify-center">Ask on WhatsApp</a>
+            <p className="mt-1 text-xs text-white/40">Select the option that works best for your location.</p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <a href={PAYSTACK} target="_blank" rel="noreferrer" className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/[0.06] p-4 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[#00C3F7]/50 hover:shadow-[0_16px_40px_-16px_rgba(0,195,247,0.5)]">
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/[0.08] via-transparent to-transparent" aria-hidden />
+                <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#00C3F7]/20 blur-2xl transition-opacity opacity-60 group-hover:opacity-100" aria-hidden />
+                <div className="relative flex items-center gap-3">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/15 bg-white p-1"><img src="/assets/paystack-banner.png" alt="" className="h-full w-full object-contain" loading="lazy" /></span>
+                  <span className="text-left"><span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-white/50">For Africa • NGN</span><span className="block text-sm font-bold text-white">Pay with Paystack <span aria-hidden className="inline-block transition-transform group-hover:translate-x-1">→</span></span><span className="block text-[11px] text-white/45">Secure • {fmt(100000)}</span></span>
+                </div>
+              </a>
+              <a href={SELAR} target="_blank" rel="noreferrer" className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/[0.06] p-4 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[#8B5CF6]/50 hover:shadow-[0_16px_40px_-16px_rgba(139,92,246,0.5)]">
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/[0.08] via-transparent to-transparent" aria-hidden />
+                <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#8B5CF6]/20 blur-2xl transition-opacity opacity-60 group-hover:opacity-100" aria-hidden />
+                <div className="relative flex items-center gap-3">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/15 bg-white p-1"><img src="/assets/selar-banner.png" alt="" className="h-full w-full object-contain" loading="lazy" /></span>
+                  <span className="text-left"><span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-white/50">International • USD</span><span className="block text-sm font-bold text-white">Pay with Selar <span aria-hidden className="inline-block transition-transform group-hover:translate-x-1">→</span></span><span className="block text-[11px] text-white/45">Secure • $74.28</span></span>
+                </div>
+              </a>
             </div>
+            <a href={WHATSAPP} target="_blank" rel="noreferrer" className="btn-secondary mt-3 w-full justify-center">Ask on WhatsApp</a>
           </div>
           <div className="mt-8 text-left"><Faq items={FAQS} /></div>
           <div className="card mt-8 text-center"><h3 className="text-2xl font-bold">Stop asking what AI can do. Start building what you want AI to do.</h3><p className="mt-2 text-sm text-muted">Ready to create, build & sell with AI? Your seat is your starting point. Don&apos;t get left behind. The future is being built right now.</p></div>
