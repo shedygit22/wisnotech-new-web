@@ -242,6 +242,80 @@ export default function Masterclass() {
         </div>
       </section>
 
+      {/* PREMIUM PAID TOOLS INCLUDED */}
+      <section id="tools-included" className="section relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0" aria-hidden style={{ background: 'radial-gradient(ellipse 55% 45% at 50% 0%, rgba(200,255,0,0.07) 0%, transparent 65%)' }} />
+        <div className="container-wide relative">
+          <Reveal>
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="eyebrow">Included free — premium toolkit</p>
+              <h2 className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight">We Hand You the Pro Tools. <span className="text-shimmer">You Keep the Skills Forever.</span></h2>
+              <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted">Your masterclass seat comes with <b className="text-white">one full month of paid access</b> to the same professional AI platforms the studio uses for client work — tools that cost <b className="text-white">hundreds of dollars per month</b> on their own. No trials. No watermarks. The real thing, from day one.</p>
+            </div>
+          </Reveal>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 max-w-4xl mx-auto">
+            <Reveal>
+              <div className="group relative h-full overflow-hidden rounded-3xl border border-white/15 bg-white/[0.05] p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1.5 hover:border-white/30 hover:shadow-[0_32px_80px_-24px_rgba(255,255,255,0.15)]">
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/[0.09] via-transparent to-transparent" aria-hidden />
+                <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-violet-500/20 blur-3xl opacity-70 group-hover:opacity-100 transition-opacity" aria-hidden />
+                <div className="relative">
+                  <div className="flex h-16 items-center rounded-2xl border border-white/10 bg-black/50 px-5 backdrop-blur">
+                    <img src="/assets/openart-logo.svg" alt="OpenArt logo" className="h-[22px] w-auto" loading="lazy" />
+                  </div>
+                  <span className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-lime-300/30 bg-lime-300/10 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-lime-300">1 month paid access included</span>
+                  <h3 className="mt-4 text-2xl font-bold">OpenArt — AI Video Suite</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">Generate cinematic text-to-video, image-to-video and character scenes on a professional plan. You&apos;ll train, create and ship your portfolio projects inside the same suite the studio bills clients with.</p>
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-white/40">Worth <span className="text-white text-sm">hundreds of dollars / month</span> — yours free for the masterclass</p>
+                </div>
+              </div>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <div className="group relative h-full overflow-hidden rounded-3xl border border-white/15 bg-white/[0.05] p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1.5 hover:border-white/30 hover:shadow-[0_32px_80px_-24px_rgba(255,255,255,0.15)]">
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/[0.09] via-transparent to-transparent" aria-hidden />
+                <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-amber-400/20 blur-3xl opacity-70 group-hover:opacity-100 transition-opacity" aria-hidden />
+                <div className="relative">
+                  <div className="flex h-16 items-center rounded-2xl border border-white/10 bg-black/50 px-5 backdrop-blur text-white">
+                    <img src="/assets/magnific-logo.svg" alt="Magnific logo" className="h-[26px] w-auto" loading="lazy" style={{ filter: 'brightness(0) invert(1)' }} />
+                  </div>
+                  <span className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-lime-300/30 bg-lime-300/10 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-lime-300">1 month paid access included</span>
+                  <h3 className="mt-4 text-2xl font-bold">Magnific — AI Upscaler & Enhancer</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">Upscale and enhance every frame to ultra-detailed, client-ready quality. Your AI clips stop looking &ldquo;AI&rdquo; the moment they pass through Magnific — premium credits included.</p>
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-white/40">Worth <span className="text-white text-sm">hundreds of dollars / month</span> — yours free for the masterclass</p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+          <Reveal>
+            <div className="mx-auto mt-8 max-w-4xl rounded-2xl border border-lime-300/25 bg-lime-300/[0.06] px-6 py-5 text-center backdrop-blur">
+              <p className="text-sm md:text-base text-white/85"><b className="text-white">Do the maths:</b> one month of these two platforms alone costs more than a huge chunk of your seat — and you get them <b className="text-lime-300">plus</b> the full training, the projects, the community and the certificate.</p>
+            </div>
+          </Reveal>
+          <div className="mt-10 grid gap-5 sm:grid-cols-3 max-w-5xl mx-auto">
+            {[
+              { src: '/wino/videos/johnwick-character.mp4', poster: '/wino/thumbs/johnwick-character.jpg', title: 'Unbroken — made with pro tools', tag: 'Action sequence' },
+              { src: '/wino/videos/factory-ninja.mp4', poster: '/wino/thumbs/factory-ninja.jpg', title: 'The Workshop Assassin', tag: 'Character vignette' },
+              { src: '/portfolio/videos/dune-trailer.mp4', poster: '/portfolio/thumbs/dune-trailer.jpg', title: 'A Desert Epic', tag: 'Cinematic trailer' }
+            ].map(v => (
+              <Reveal key={v.src}>
+                <div className="card group overflow-hidden !p-0">
+                  <div className="relative aspect-video overflow-hidden bg-black">
+                    <video autoPlay loop muted playsInline preload="metadata" poster={v.poster} className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"><source src={v.src} type="video/mp4" /></video>
+                    <span className="absolute left-3 top-3 rounded-full border border-lime-300/30 bg-black/55 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-lime-300 backdrop-blur">{v.tag}</span>
+                  </div>
+                  <div className="p-4"><p className="text-sm font-semibold">{v.title}</p><p className="mt-1 text-xs text-muted">The exact quality bar you&apos;ll hit with your included toolkit.</p></div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal>
+            <div className="mt-10 text-center">
+              <a href="#pricing" className="btn-primary">Claim My Seat + Free Toolkit →</a>
+              <p className="mt-3 text-xs text-white/40">Paid tools activate the moment you enroll. No extra checkout.</p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* PRICING */}
       <section id="pricing" className="section bg-white/[0.02]">
         <div className="container-wide max-w-2xl text-center">
