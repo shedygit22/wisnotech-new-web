@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wisnotech.vercel.app/sitemap.xml
