@@ -55,7 +55,7 @@ const FAQS = [
   ['Will we build AI agents?', 'Yes. You will learn the concepts and workflows behind agentic AI systems and how AI agents can perform multi-step tasks.'],
   ['Will I learn automation?', "Yes. You'll explore how APIs, triggers, workflows, AI and external services can be connected to automate useful processes."],
   ['What tools will we use?', 'The AI ecosystem changes quickly. The masterclass focuses on relevant modern tools and, more importantly, the workflows and principles behind using them effectively.'],
-  ['How much is the masterclass?', 'Early bird is ₦100,000. After early bird closes, it becomes ₦150,000. Joining early saves you ₦50,000.'],
+  ['How much is the masterclass?', 'Early bird is ₦300,000. After early bird closes, it becomes ₦400,000. Joining early saves you ₦100,000.'],
   ['Will the sessions be recorded?', 'Yes. You will have access to all sessions.'],
   ['How long is the masterclass?', '1 week intensive.'],
   ['What happens after I register?', "After successful registration, you'll receive onboarding information and instructions for accessing the masterclass."],
@@ -129,16 +129,16 @@ export default function Masterclass() {
             <li className="flex gap-2.5">🚀 Turn what you learn into potential business opportunities.</li>
           </ul>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <a href={PAYSTACK} target="_blank" rel="noreferrer" className="btn-primary">Secure Your Seat — {fmt(100000)} →</a>
+            <a href={PAYSTACK} target="_blank" rel="noreferrer" className="btn-primary">Secure Your Seat — {fmt(300000)} →</a>
             <a href="#videos" className="btn-secondary">▶ Watch the Work</a>
           </div>
           <div className="mx-auto mt-14 grid max-w-xl grid-cols-3 gap-4">
             {[['Remote', '& Physical'], ['Dec 2026', 'Starts then'], ['Limited', 'Slots available']].map(([a, b]) => <div key={b} className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-5 backdrop-blur-xl"><p className="text-2xl font-bold">{a}</p><p className="mt-1 text-xs text-muted">{b}</p></div>)}
           </div>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5">
-            <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#080808]">Fee: {fmt(100000)}</span>
-            <span className="rounded-full border border-white/15 bg-white/[0.04] px-3 py-1 text-xs text-white/50 line-through">Late: {fmt(150000)}</span>
-            <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-[#080808]">Save {fmt(50000)}</span>
+            <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#080808]">Fee: {fmt(300000)}</span>
+            <span className="rounded-full border border-white/15 bg-white/[0.04] px-3 py-1 text-xs text-white/50 line-through">Late: {fmt(400000)}</span>
+            <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-[#080808]">Save {fmt(100000)}</span>
           </div>
           <p className="mt-2 text-[11px] text-white/30">Limited early bird registration.</p>
         </div>
@@ -250,8 +250,8 @@ export default function Masterclass() {
           <p className="mt-3 text-sm text-muted">Learn the tools. Build the projects. Create the portfolio. The AI gold rush is happening across Entertainment, Advertising, Software, Marketing, Education, Business automation, Content creation.</p>
           <div className="card mt-8 text-left">
             <p className="text-xs uppercase tracking-widest text-lime-300">Early Bird Access — EARLY BIRD — Full access</p>
-            <p className="mt-4 text-4xl font-extrabold">{fmt(100000)} <span className="text-lg text-white/40 line-through">{fmt(150000)}</span></p>
-            <p className="text-xs text-white/50">Save {fmt(50000)} • Limited early bird registration. Join before the price moves. Limited Slots — Remote & Physical. Remote & Physical • December 2026.</p>
+            <p className="mt-4 text-4xl font-extrabold">{fmt(300000)} <span className="text-lg text-white/40 line-through">{fmt(400000)}</span></p>
+            <p className="text-xs text-white/50">Save {fmt(100000)} • Limited early bird registration. Join before the price moves. Limited Slots — Remote & Physical. Remote & Physical • December 2026.</p>
             <p className="mt-4 font-semibold text-sm">Choose Your Payment Method</p>
             <p className="mt-1 text-xs text-white/40">Select the option that works best for your location.</p>
             <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -260,7 +260,7 @@ export default function Masterclass() {
                 <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#00C3F7]/20 blur-2xl transition-opacity opacity-60 group-hover:opacity-100" aria-hidden />
                 <div className="relative flex items-center gap-3">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/15 bg-white p-1"><img src="/assets/paystack-banner.png" alt="" className="h-full w-full object-contain" loading="lazy" /></span>
-                  <span className="text-left"><span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-white/50">For Africa • NGN</span><span className="block text-sm font-bold text-white">Pay with Paystack <span aria-hidden className="inline-block transition-transform group-hover:translate-x-1">→</span></span><span className="block text-[11px] text-white/45">Secure • {fmt(100000)}</span></span>
+                  <span className="text-left"><span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-white/50">For Africa • NGN</span><span className="block text-sm font-bold text-white">Pay with Paystack <span aria-hidden className="inline-block transition-transform group-hover:translate-x-1">→</span></span><span className="block text-[11px] text-white/45">Secure • {fmt(300000)}</span></span>
                 </div>
               </a>
               <a href={SELAR} target="_blank" rel="noreferrer" className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/[0.06] p-4 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[#8B5CF6]/50 hover:shadow-[0_16px_40px_-16px_rgba(139,92,246,0.5)]">
@@ -268,7 +268,7 @@ export default function Masterclass() {
                 <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#8B5CF6]/20 blur-2xl transition-opacity opacity-60 group-hover:opacity-100" aria-hidden />
                 <div className="relative flex items-center gap-3">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/15 bg-white p-1"><img src="/assets/selar-banner.png" alt="" className="h-full w-full object-contain" loading="lazy" /></span>
-                  <span className="text-left"><span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-white/50">International • USD</span><span className="block text-sm font-bold text-white">Pay with Selar <span aria-hidden className="inline-block transition-transform group-hover:translate-x-1">→</span></span><span className="block text-[11px] text-white/45">Secure • $74.28</span></span>
+                  <span className="text-left"><span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-white/50">International • USD</span><span className="block text-sm font-bold text-white">Pay with Selar <span aria-hidden className="inline-block transition-transform group-hover:translate-x-1">→</span></span><span className="block text-[11px] text-white/45">Secure • $222.84</span></span>
                 </div>
               </a>
             </div>
